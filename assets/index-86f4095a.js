@@ -202,6 +202,26 @@ Error generating stack: `+o.message+`
   }
 `,Ex=G.div`
   min-width: 0;
+  .swiper-slide {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    &::after {
+      background: rgba(255,255,255,0.75);
+      border-radius: 10px;
+      content: '';
+      display: block;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      transition: var(--animate);
+    }
+    &:hover::after { opacity: 0.5; }
+    &-thumb-active::after { box-shadow: inset 0 0 0 2px var(--color-orange); opacity: 1 !important; }
+  }
   img { border-radius: 10px; display: block; }
   @media screen and (max-width: 900px) {
     display: none;
