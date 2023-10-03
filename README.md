@@ -12,6 +12,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Start app](#start-app)
 
 ## Overview
 
@@ -33,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/K-ost/ecommerce-product-page](https://github.com/K-ost/ecommerce-product-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://K-ost.github.io/ecommerce-product-page/](https://K-ost.github.io/ecommerce-product-page/)
 
 ## My process
 
@@ -58,4 +59,4 @@ Users should be able to:
 
 ### Start app
 
-- 'npm run dev'
+- Command to run application: npm run dev

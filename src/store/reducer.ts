@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
-import { CartType, ProductType } from '../types'
+import { CartType } from '../types'
 
 // Define a type for the slice state
 interface AppState {

@@ -9,7 +9,7 @@ import Gallery from "./components/Gallery"
 import Information from "./components/Information"
 import { useDispatch } from "react-redux"
 import { AppDispatch } from "./store/store"
-import { setOrder, setOrders } from "./store/reducer"
+import { setOrders } from "./store/reducer"
 
 // Data
 const data = {
