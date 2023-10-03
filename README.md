@@ -55,3 +55,7 @@ Users should be able to:
 
 - Website - [https://github.com/K-ost/](https://github.com/K-ost/)
 - Frontend Mentor - [@K-ost](https://www.frontendmentor.io/profile/K-ost)
+
+### Start app
+
+- 'npm run dev'
