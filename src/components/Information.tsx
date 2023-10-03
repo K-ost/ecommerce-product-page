@@ -6,6 +6,7 @@ import { AppDispatch } from "../store/store"
 import { setOrder } from "../store/reducer"
 import styled from "styled-components"
 import Increment, { NumberWrap } from "./Increment"
+import InfoSkelets from "./InfoSkelets"
 
 interface IInformation {
   el: ProductType | null
@@ -72,7 +73,7 @@ const Error = styled.div`
 // Styles
 
 const Information: React.FC<IInformation> = ({ el }) => {
-  if (!el) return null
+  if (!el) return <InfoSkelets />
 
   const [counter, setCounter] = useState<number>(0)
   const dispatch = useDispatch<AppDispatch>()

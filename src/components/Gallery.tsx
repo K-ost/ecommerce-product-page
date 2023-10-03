@@ -6,6 +6,7 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import prev from "../assets/icon-previous.svg"
 import Fancybox from "./Fancy"
+import GallerySkelets from "./GallerySkelets"
 
 interface IGallery {
   imgs: string[] | undefined
@@ -66,7 +67,7 @@ const Gallery: React.FC<IGallery> = ({ imgs }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null)
 
   if (!imgs) {
-    return null
+    return <GallerySkelets /> 
   }
   
   return (
