@@ -43,9 +43,9 @@ const Header: React.FC = () => {
       <Cart />
 
       <div className="headerUser">
-        <button>
+        <div>
           <img src={avatar} alt="" />
-        </button>
+        </div>
       </div>
     </header>
   )

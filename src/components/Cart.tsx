@@ -44,9 +44,9 @@ const Cart: React.FC = () => {
   
   return (
     <div className="headerBasket" ref={ref}>
-      <button className="basketBtn" onClick={() => setIsActive(!isActive)}>
+      <div className="basketBtn" onClick={() => setIsActive(!isActive)}>
         {count > 0 && <span>{count}</span>}
-      </button>
+      </div>
       <BasketDropdown $show={isActive}>
         <BasketDropdownHeader>Cart</BasketDropdownHeader>
         <BasketDropdownBody>
