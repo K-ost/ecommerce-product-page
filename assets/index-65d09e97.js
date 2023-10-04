@@ -226,7 +226,7 @@ Error generating stack: `+o.message+`
   @media screen and (max-width: 900px) {
     display: none;
   }
-`,Cx=({imgs:t})=>{const[e,n]=$.useState(null);return t?k.jsxs(bx,{children:[k.jsx(xx,{children:k.jsx(vx,{children:k.jsx(Tu,{spaceBetween:20,slidesPerView:1,modules:[Wf,tx],thumbs:e?{swiper:e}:void 0,navigation:!0,children:t.map((i,r)=>k.jsx(ku,{children:k.jsx("a",{href:i,"data-fancybox":"group",children:k.jsx("img",{src:i,alt:""})})},r))})})}),k.jsx(Ex,{children:k.jsx(Tu,{spaceBetween:30,slidesPerView:4,modules:[Wf],onSwiper:n,children:t.map((i,r)=>k.jsx(ku,{children:k.jsx("img",{src:i,alt:""})},r))})})]}):k.jsx(Sx,{})},Wg=G.div`
+`,Cx=({imgs:t})=>{const[e,n]=$.useState(null);return t?k.jsxs(bx,{children:[k.jsx(xx,{children:k.jsx(vx,{children:k.jsx(Tu,{spaceBetween:20,slidesPerView:1,modules:[Wf,tx],thumbs:e,navigation:!0,children:t.map((i,r)=>k.jsx(ku,{children:k.jsx("a",{href:i,"data-fancybox":"group",children:k.jsx("img",{src:i,alt:""})})},r))})})}),k.jsx(Ex,{children:k.jsx(Tu,{spaceBetween:30,slidesPerView:4,modules:[Wf],onSwiper:n,children:t.map((i,r)=>k.jsx(ku,{children:k.jsx("img",{src:i,alt:""})},r))})})]}):k.jsx(Sx,{})},Wg=G.div`
   display: inline-block;
   position: relative;
   width: 155px;
