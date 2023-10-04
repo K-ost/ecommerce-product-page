@@ -226,11 +226,10 @@ Error generating stack: `+o.message+`
   @media screen and (max-width: 900px) {
     display: none;
   }
-`,Cx=({imgs:t})=>{const[e,n]=$.useState(null);return t?k.jsxs(bx,{children:[k.jsx(xx,{children:k.jsx(vx,{children:k.jsx(Tu,{spaceBetween:20,slidesPerView:1,modules:[Wf,tx],thumbs:{swiper:e&&!e.destroyed?e:null},navigation:!0,children:t.map((i,r)=>k.jsx(ku,{children:k.jsx("a",{href:i,"data-fancybox":"group",children:k.jsx("img",{src:i,alt:""})})},r))})})}),k.jsx(Ex,{children:k.jsx(Tu,{spaceBetween:30,slidesPerView:4,modules:[Wf],onSwiper:n,children:t.map((i,r)=>k.jsx(ku,{children:k.jsx("img",{src:i,alt:""})},r))})})]}):k.jsx(Sx,{})},Wg=G.div`
+`,Cx=({imgs:t})=>{const[e,n]=$.useState(null);return t?k.jsxs(bx,{children:[k.jsx(xx,{children:k.jsx(vx,{children:k.jsx(Tu,{spaceBetween:20,slidesPerView:1,modules:[Wf,tx],thumbs:{swiper:e&&!e.destroyed?e:null},navigation:!0,children:t.map((i,r)=>k.jsx(ku,{children:k.jsx("a",{href:i,"data-fancybox":"group","aria-label":`Photo-${r}`,children:k.jsx("img",{src:i,alt:""})})},r))})})}),k.jsx(Ex,{children:k.jsx(Tu,{spaceBetween:30,slidesPerView:4,modules:[Wf],onSwiper:n,children:t.map((i,r)=>k.jsx(ku,{children:k.jsx("img",{src:i,alt:""})},r))})})]}):k.jsx(Sx,{})},Wg=G.div`
   display: inline-block;
   position: relative;
   width: 155px;
-  label { display: block; }
 `,Px=G.input.attrs({type:"number"})`
   background: var(--color-light);
   border: 0;
@@ -262,7 +261,7 @@ Error generating stack: `+o.message+`
   top: 0;
   -webkit-appearance: none;
   &.right { left: auto; right: 0; }
-`,Tx=({handler:t})=>{const[e,n]=$.useState(0);return $.useEffect(()=>{t(e)},[e]),k.jsxs(Wg,{children:[k.jsx(dp,{onClick:()=>n(i=>i>0?i-1:i=0),children:"-"}),k.jsx("label",{children:k.jsx(Px,{value:e,onChange:i=>n(Number(i.target.value))})}),k.jsx(dp,{className:"right",onClick:()=>n(i=>i+1),children:"+"})]})},or=G.div`
+`,Tx=({handler:t})=>{const[e,n]=$.useState(0);return $.useEffect(()=>{t(e)},[e]),k.jsxs(Wg,{children:[k.jsx(dp,{onClick:()=>n(i=>i>0?i-1:i=0),children:"-"}),k.jsx(Px,{value:e,onChange:i=>n(Number(i.target.value)),"aria-label":"Counter"}),k.jsx(dp,{className:"right",onClick:()=>n(i=>i+1),children:"+"})]})},or=G.div`
   background: #ededed;
   border-radius: 12px;
   height: 30px;
