@@ -83,7 +83,7 @@ const Gallery: React.FC<IGallery> = ({ imgs }) => {
           >
             {imgs.map((img, index) => (
               <SwiperSlide key={index}>
-                <a href={img} data-fancybox="group"><img src={img} alt="" /></a>
+                <a href={img} data-fancybox="group" aria-label={`Photo-${index}`}><img src={img} alt="" /></a>
               </SwiperSlide>
             ))}
           </Swiper>
