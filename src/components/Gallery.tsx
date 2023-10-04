@@ -78,7 +78,7 @@ const Gallery: React.FC<IGallery> = ({ imgs }) => {
             spaceBetween={20}
             slidesPerView={1}
             modules={[Thumbs, Navigation]}
-            thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : undefined}
+            thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
             navigation
           >
             {imgs.map((img, index) => (
