@@ -10,7 +10,6 @@ export const NumberWrap = styled.div`
   display: inline-block;
   position: relative;
   width: 155px;
-  label { display: block; }
 `
 const NumberBox = styled.input.attrs({ type: "number" })`
   background: var(--color-light);
@@ -56,12 +55,11 @@ const Increment: React.FC<IIncrement> = ({ handler }) => {
   return (
     <NumberWrap>
       <NumberBtn onClick={() => setCount(prev => prev > 0 ? prev - 1 : prev = 0)}>-</NumberBtn>
-      <label>
-        <NumberBox
-          value={count}
-          onChange={(e: React.ChangeEvent<HTMLInputElement>) => setCount(Number(e.target.value))}
-        />
-      </label>
+      <NumberBox
+        value={count}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setCount(Number(e.target.value))}
+        aria-label="Counter"
+      />
       <NumberBtn className="right" onClick={() => setCount(prev => prev + 1)}>+</NumberBtn>
     </NumberWrap>
   )
